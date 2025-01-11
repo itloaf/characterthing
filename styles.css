@@ -1,10 +1,35 @@
 .images {
-    position: relative;
-    display: inline;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    overflow: contain;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
 }
+
+img{
+    max-width: 60vw;
+    max-height: 95vh;
+    aspect-ratio: 60vw/60vw;
+}
+.bottomimage{
+    position: absolute;
+    margin: auto;
+    top:0;
+    z-index: 0;
+}
+
+.middleimage{
+    position: absolute;
+    margin: auto;
+    top:0;
+    z-index: 1;
+}
+
 .topimage {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+    margin: auto;
+    top:0;
+    z-index: 2;
 }
